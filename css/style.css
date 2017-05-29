@@ -346,6 +346,10 @@ body, .footer__container {
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto; }
+  @media screen and (max-width: 767px) {
+    .post__comments-containers {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
 
 body {
   margin: 0;
