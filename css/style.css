@@ -5,7 +5,7 @@ body, .footer__container {
     clear: both;
     content: "";
     display: table; }
-  body h1, .footer__container h1, body .post__container .entry-title, .post__container body .entry-title, .footer__container .post__container .entry-title, .post__container .footer__container .entry-title, body .post__container--expansive .entry-title, .post__container--expansive body .entry-title, .footer__container .post__container--expansive .entry-title, .post__container--expansive .footer__container .entry-title, body h2, .footer__container h2, body .post__container .subtitle, .post__container body .subtitle, .footer__container .post__container .subtitle, .post__container .footer__container .subtitle, body .post__container--expansive .subtitle, .post__container--expansive body .subtitle, .footer__container .post__container--expansive .subtitle, .post__container--expansive .footer__container .subtitle, body h3, .footer__container h3, body p, .footer__container p {
+  body h1, .footer__container h1, body .post__container .entry-title, .post__container body .entry-title, .footer__container .post__container .entry-title, .post__container .footer__container .entry-title, body .post__container--expansive .entry-title, .post__container--expansive body .entry-title, .footer__container .post__container--expansive .entry-title, .post__container--expansive .footer__container .entry-title, body h2, .footer__container h2, body .post__container .subtitle, .post__container body .subtitle, .footer__container .post__container .subtitle, .post__container .footer__container .subtitle, body .post__container--expansive .subtitle, .post__container--expansive body .subtitle, .footer__container .post__container--expansive .subtitle, .post__container--expansive .footer__container .subtitle, body .post__container blockquote p, .post__container blockquote body p, .footer__container .post__container blockquote p, .post__container blockquote .footer__container p, body .post__container--expansive blockquote p, .post__container--expansive blockquote body p, .footer__container .post__container--expansive blockquote p, .post__container--expansive blockquote .footer__container p, body h3, .footer__container h3, body p, .footer__container p {
     margin: 0; }
   body hr, .footer__container hr {
     border-bottom: 1px solid #aaa;
@@ -38,7 +38,7 @@ body, .footer__container {
     @media screen and (max-width: 767px) {
       body h1, .footer__container h1, body .post__container .entry-title, .post__container body .entry-title, .footer__container .post__container .entry-title, .post__container .footer__container .entry-title, body .post__container--expansive .entry-title, .post__container--expansive body .entry-title, .footer__container .post__container--expansive .entry-title, .post__container--expansive .footer__container .entry-title {
         font-size: 1.5em; } }
-  body h2, .footer__container h2, body .post__container .subtitle, .post__container body .subtitle, .footer__container .post__container .subtitle, .post__container .footer__container .subtitle, body .post__container--expansive .subtitle, .post__container--expansive body .subtitle, .footer__container .post__container--expansive .subtitle, .post__container--expansive .footer__container .subtitle {
+  body h2, .footer__container h2, body .post__container .subtitle, .post__container body .subtitle, .footer__container .post__container .subtitle, .post__container .footer__container .subtitle, body .post__container--expansive .subtitle, .post__container--expansive body .subtitle, .footer__container .post__container--expansive .subtitle, .post__container--expansive .footer__container .subtitle, body .post__container blockquote p, .post__container blockquote body p, .footer__container .post__container blockquote p, .post__container blockquote .footer__container p, body .post__container--expansive blockquote p, .post__container--expansive blockquote body p, .footer__container .post__container--expansive blockquote p, .post__container--expansive blockquote .footer__container p {
     font-family: "PT Sans", sans-serif;
     font-size: 1.2em;
     font-weight: 400;
@@ -354,7 +354,11 @@ body, .footer__container {
 body {
   margin: 0;
   border-top: 1px #000 solid;
-  font-size: 110%; }
+  font-size: 100%;
+  min-width: 320px; }
+  @media screen and (max-width: 767px) {
+    body {
+      font-size: 110%; } }
 
 .hg-header {
   display: -webkit-box;
@@ -444,7 +448,7 @@ body {
   background-size: 75px 75px;
   margin-left: auto;
   margin-right: auto;
-  transition: transform 1s; }
+  transition: width 1s; }
   .hg-header-logo-image--circle.circle--shrink {
     transform: scale(0.5); }
 
@@ -517,6 +521,9 @@ body {
   .post__container .post__tags a, .post__container--expansive .post__tags a {
     color: #41484c; }
 
+.post__container blockquote p, .post__container--expansive blockquote p {
+  font-style: italic; }
+
 .post__container .divide, .post__container--expansive .divide {
   display: block;
   clear: both;
@@ -526,15 +533,16 @@ body {
   margin-top: 0;
   margin-bottom: 20px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  transition: transform 1s; }
 
 .post__container, .post__container--expansive {
   min-width: 8rem;
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
   @media screen and (max-width: 767px) {
     .post__container, .post__container--expansive {
       padding-left: 20px;
@@ -544,7 +552,7 @@ body {
 .post__container--expansive {
   max-width: 100%;
   text-align: center; }
-  .post__container--expansive .entry-content h1, .post__container--expansive .entry-content .entry-title, .post__container--expansive .entry-content h2, .post__container--expansive .entry-content .subtitle, .post__container--expansive .entry-content h3, .post__container--expansive .entry-content h4, .post__container--expansive .entry-content h5, .post__container--expansive .entry-content p, .post__container--expansive .entry-content ul, .post__container--expansive .entry-content ol, .post__container--expansive .entry-content pre {
+  .post__container--expansive .entry-content h1, .post__container--expansive .entry-content .entry-title, .post__container--expansive .entry-content h2, .post__container--expansive .entry-content .subtitle, .post__container blockquote .post__container--expansive .entry-content p, .post__container--expansive .entry-content blockquote p, .post__container--expansive blockquote .entry-content p, .post__container--expansive .entry-content h3, .post__container--expansive .entry-content h4, .post__container--expansive .entry-content h5, .post__container--expansive .entry-content p, .post__container--expansive .entry-content ul, .post__container--expansive .entry-content ol, .post__container--expansive .entry-content pre {
     min-width: 8rem;
     max-width: 40rem;
     margin-left: auto;
@@ -565,6 +573,17 @@ body {
     .post__container--expansive {
       padding-left: 20px;
       padding-right: 20px; } }
+
+.archive__container {
+  min-width: 8rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .archive__container .archive__article-list {
+    list-style-type: none;
+    padding-left: 0; }
+    .archive__container .archive__article-list .date, .archive__container .archive__article-list .post__container .posted-on, .post__container .archive__container .archive__article-list .posted-on, .archive__container .archive__article-list .post__container--expansive .posted-on, .post__container--expansive .archive__container .archive__article-list .posted-on {
+      color: #aaa; }
 
 .footer__container {
   color: #aaa;
