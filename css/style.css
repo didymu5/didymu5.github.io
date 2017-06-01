@@ -354,8 +354,9 @@ body, .footer__container {
 body {
   margin: 0;
   border-top: 1px #000 solid;
-  font-size: 100%;
-  min-width: 320px; }
+  font-size: 1.1em;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased; }
   @media screen and (max-width: 767px) {
     body {
       font-size: 110%; } }
