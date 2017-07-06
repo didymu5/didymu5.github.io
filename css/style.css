@@ -453,6 +453,12 @@ body {
   .hg-header-logo-image--circle.circle--shrink {
     transform: scale(0.5); }
 
+.front-page-description__block {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 20%;
+  padding-right: 20%; }
+
 .social-icons__block {
   display: -webkit-box;
   display: -webkit-flex;
