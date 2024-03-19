@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	presets: [],
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  presets: [],
   darkMode: 'media', // or 'class'
   theme: {
     accentColor: ({ theme }) => ({
@@ -14,7 +14,7 @@ export default {
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
-			'gradient-shift': 'gradient-shift 5s ease infinite',
+      'gradient-shift': 'gradient-shift 5s ease infinite',
     },
     aria: {
       busy: 'busy="true"',
@@ -595,10 +595,10 @@ export default {
           animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
         },
       },
-			'gradient-shift': {
-				'0%, 100%': { backgroundPosition: '0 0' },
-				'50%': { backgroundPosition: '200% 0' },
-			}
+      'gradient-shift': {
+        '0%, 100%': { backgroundPosition: '0 0' },
+        '50%': { backgroundPosition: '200% 0' },
+      },
     },
     letterSpacing: {
       tighter: '-0.05em',
@@ -1065,4 +1065,4 @@ export default {
     },
   },
   plugins: [require('@tailwindcss/typography')],
-}
+};

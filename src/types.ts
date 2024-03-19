@@ -21,14 +21,14 @@ export type SocialIcons = {
 };
 
 export type SocialMediaTypes =
-  | "Github"
-  | "Facebook"
-  | "Instagram"
-  | "LinkedIn"
-  | "Mail"
-  | "Twitter"
-  | "YouTube"
-  | "WhatsApp"
-  | "Snapchat"
-  | "CodePen"
-  | "Discord";
+  | 'Github'
+  | 'Facebook'
+  | 'Instagram'
+  | 'LinkedIn'
+  | 'Mail'
+  | 'Twitter'
+  | 'YouTube'
+  | 'WhatsApp'
+  | 'Snapchat'
+  | 'CodePen'
+  | 'Discord';
